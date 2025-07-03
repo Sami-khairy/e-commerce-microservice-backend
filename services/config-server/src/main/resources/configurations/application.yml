@@ -1,0 +1,11 @@
+#all other yml files will inherit from this file
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+spring:
+  cloud:
+    config:
+      override-system-properties: false  # do not override system properties
