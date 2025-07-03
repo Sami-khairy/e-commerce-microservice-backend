@@ -8,6 +8,8 @@ import ma.khairy.ecommerce.kafka.OrderConfirmation;
 import ma.khairy.ecommerce.kafka.OrderProducer;
 import ma.khairy.ecommerce.orderline.OrderLineRequest;
 import ma.khairy.ecommerce.orderline.OrderLineService;
+import ma.khairy.ecommerce.payment.PaymentClient;
+import ma.khairy.ecommerce.payment.PaymentRequest;
 import ma.khairy.ecommerce.product.ProductClient;
 import ma.khairy.ecommerce.product.PurchaseRequest;
 import org.springframework.stereotype.Service;
