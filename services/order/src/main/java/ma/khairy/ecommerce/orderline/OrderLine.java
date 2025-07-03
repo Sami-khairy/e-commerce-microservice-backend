@@ -10,7 +10,6 @@ import ma.khairy.ecommerce.order.Order;
 @Setter
 @Entity
 @NoArgsConstructor
-@Table(name = "customer_line")
 public class OrderLine {
 
     @Id

@@ -18,7 +18,7 @@ import java.util.List;
 @Entity
 @EntityListeners(AuditingEntityListener.class)
 @NoArgsConstructor
-@Table(name = "customer_order")
+@Table(name = "cus_order")
 public class Order {
 
     @Id

@@ -58,7 +58,7 @@ services:
       - mongo
 
   zookeeper:
-    image: confluentinc/cp-zookeeper:latest
+    image: confluentinc/cp-zookeeper:7.4.3
     container_name: zookeeper
     environment:
       ZOOKEEPER_SERVER_ID: 1
@@ -70,15 +70,13 @@ services:
       - microservices-net
 
   kafka:
-    image: confluentinc/cp-kafka:latest
+    image: confluentinc/cp-kafka:7.4.3
     container_name: ms_kafka
     ports:
       - "9092:9092"
     depends_on:
       - zookeeper
     environment:
-      KAFKA_PROCESS_ROLES: broker
-      CLUSTER_ID: my-cluster-id
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
       KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 1
       KAFKA_TRANSACTION_STATE_LOG_MIN_ISR: 1
