@@ -9,3 +9,9 @@ spring:
   cloud:
     config:
       override-system-properties: false  # do not override system properties
+
+#for zipkin, we can use also the ELK stack : elasticsearch, logstash, kibana
+management:
+  tracing:
+    sampling:
+      probability: 1.0
