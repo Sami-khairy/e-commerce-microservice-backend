@@ -20,4 +20,6 @@ public class OrderLine {
     private Order order;
     private Integer productId;
     private double quantity;
+    @Version
+    private Integer version;
 }
